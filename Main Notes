@@ -2,3 +2,124 @@ ssh student@10.50.X.X -X (enter ips for X.X)
 ssh student@10.50.32.21 -X (Windows)
 ssh student@10.50.38.145 -X (Linux Use terminator command to open weird cmd)
 Terminator
+
+
+
+-----------------------------------------------------------------------DAY 1------------------------------------------------------------------
+>ls - al
+# This will show hidden files (typically start with a period)
+
+>sudo !!
+# This will run last command as root
+
+>grep
+# Searches for ____ in a file (put whatever you want as underline)
+
+>ls -lisa
+# standard ls shows all information
+
+>touch -t yymmddhhmm.ss
+# Change timestamp
+
+>mkdir -p
+# makes directory -p wil make parent directory of directory you just made.
+
+>umark
+default is 0002. This number shows default permissions
+
+>chmod 777
+# changes permissions of file
+
+>rm
+# removes file use -rf to recurivsely remove.
+
+>rmdir -p
+# removes directory -p removes parent directory
+
+
+> ls ~/*.log
+# ~ and /  just say home directory and * is the wildcard
+
+
+>mv src dest target dst
+# Self explanatory
+
+>locate <what we want to locate> | grep <what we want to find this color codes :D )
+# Searches filesystem
+
+
+>whereis man
+# Similiar to locate. In this instance shows us where man is present at.
+
+>find  <where to start searching> <options>
+# -name is case sensitive 
+# -iname is insensitive 
+# -lname is symbolic link files 
+# -inum shows inode numbers 
+# -size looks for files with files of whatever size (default is bytes) +10M -20M (finds files between 10-20 megabytes)
+# -maxdepth maxium amount of directory to search from current directory
+# - type d finds directories
+# good example of find command(dev/null relates to errors error code handling to be specific): find / -type s -exec echo {} 2>/dev/null \; | grep domain*
+# time = days
+# a = accessed
+# c = changed
+# m = modified
+find -cmin -30
+#command above finds files changed in the last 30 mins\
+find /var/log/ -iname *.log -exec ls -al {} 2>/dev/null \;
+-exec makes the ls -al get executed
+
+
+
+https://linuxhandbook.com/find-exec-command/
+
+find [path] [arguments] -exec [command] {} \;
+find [path] [arguments] -exec [command] {} +
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
