@@ -83,7 +83,15 @@ cat /etc/passwd | grep /bin/bash
 #shows who has bash prompt
 
 
+>killall
+# kills all the processes
 
+
+> kill <PID>
+# kills a process by number
+
+>pkil (name)
+#kills a process by name
 
 
 
