@@ -1,0 +1,4 @@
+ssh student@10.50.X.X -X (enter ips for X.X)
+ssh student@10.50.32.21 -X (Windows)
+ssh student@10.50.38.145 -X (Linux Use terminator command to open weird cmd)
+Terminator
