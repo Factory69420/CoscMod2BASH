@@ -3,8 +3,9 @@ ssh student@10.50.32.21 -X (Windows)
 ssh student@10.50.38.145 -X (Linux Use terminator command to open weird cmd)
 Terminator
 
-
-
+http://10.50.24.190/challenges
+LCplElliott
+passwd: Carmel69420!
 -----------------------------------------------------------------------DAY 1------------------------------------------------------------------
 >ls - al
 # This will show hidden files (typically start with a period)
@@ -14,7 +15,8 @@ Terminator
 
 >grep
 # Searches for ____ in a file (put whatever you want as underline)
-
+# -v finds everything but this
+# egrep or grep -E
 >ls -lisa
 # standard ls shows all information
 
@@ -23,7 +25,7 @@ Terminator
 
 >mkdir -p
 # makes directory -p wil make parent directory of directory you just made.
-
+# mkdir sushi{11,22,33,44} makes files called sushi and the number inside braces get added to the sushi
 >umark
 default is 0002. This number shows default permissions
 
@@ -77,8 +79,8 @@ find [path] [arguments] -exec [command] {} \;
 find [path] [arguments] -exec [command] {} +
 
 
-
-
+cat /etc/passwd | grep /bin/bash
+#shows who has bash prompt
 
 
 
