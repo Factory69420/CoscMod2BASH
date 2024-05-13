@@ -93,8 +93,16 @@ cat /etc/passwd | grep /bin/bash
 >pkil (name)
 #kills a process by name
 
+>cut -d: -f1 fakepasswd
+# this gives field 1 of password
+# -d means delimtor and it is doing it by:
+# -f1 means field 1
+# Delimitor in this case is the :
 
 
+
+>cut -d: -f1 -s fakepasswd
+# -s means print anything containing to delimtor. Works like the opposite of like grep -v
 
 
 
