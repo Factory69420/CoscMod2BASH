@@ -138,7 +138,10 @@ Output:adds numbers to the right of outputed txt
 >cat fakepasswd.txt | sort
 -n argument does numerically
 -nr argument sorts numerically reveresed
--u argument sorts uniquely
+-u argument sorts uniquely sometimes need to pipe to uniq '| uniq'
+> ps aux | sort - k 2 -nr
+-ps aux is like ps -elf
+-k # sorts by column #
 
 Output: It sorts file by position in ascii key table (alphabetical)
 
