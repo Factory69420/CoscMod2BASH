@@ -259,8 +259,12 @@ Tip: As you may have noticed, when using grep you can simulate a logical AND by 
 
 
 Answer:
+GPT (Wrong somehow):
 dmesg | grep -E -i 'CPU|BIOS' | grep -E -iv 'usable|reserved' | sed 's/\[[0-9]*\.[0-9]*\]//g'
 
 
+Correct:
+
+dmesg | egrep 'CPU|BIOS' | egrep -iv 'usable|reserved' | cut -d] -f2-
 
 
