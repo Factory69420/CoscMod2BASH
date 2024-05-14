@@ -163,11 +163,23 @@ Sed:
 sed -e 's/chicken/hambuger/g' -e /s/pepperoni/sausage/' pizza.txt
 
 
+Command Substution
+
+File is: ni-.sh
+
+#!/bin/bash
+A=$(cat tail /etc/passwd)
+echo $A
 
 
 
+File is: niceguy.sh
 
-
-
-
+#!/bin/bash
+A=$(find /usr/bin -name passwd)
+echo $A
+echo
+md5sum $A
+echo
+file $A
 
