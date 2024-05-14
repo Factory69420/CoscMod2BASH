@@ -154,7 +154,13 @@ Output: It sorts file by position in ascii key table (alphabetical)
 
 
 
-
+Sed:
+-e expression for multiple sed patterns
+-s is substituion start pattern
+-g is for global (lowercase)
+-d (lowercase) deletes
+-$ means end of line
+sed -e 's/chicken/hambuger/g' -e /s/pepperoni/sausage/' pizza.txt
 
 
 
