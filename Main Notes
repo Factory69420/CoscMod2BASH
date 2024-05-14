@@ -105,25 +105,42 @@ cat /etc/passwd | grep /bin/bash
 # -s means print anything containing to delimtor. Works like the opposite of like grep -v
 
 
+--------------------------------------------DAY 2---------------------------------------------------------------
+>tail fakepasswd.txt | awk -F: '{print $1}'
+
+Output: last 10 lines of fakepasswd.txt
 
 
 
 
+-F: = sepereated by colons
+print $1 = print field 1 
+
+>tail fakepasswd.txt | awk -F: '{print $2}'
+
+Output: all x's in password place(last 10 lines)
+
+>tail fakepasswd.txt | awk -F: '{print $0}'
+
+Output: Print everything(last 10 lines)
+
+>tail fakepasswd.txt | awk -F: '{print $1,$3}'
+
+Output: name and user ID (prints field 1 and field 3)
 
 
+>awk -F: 'BEGIN' '{OFS="#"} {print $1,$3}' fakepasswd.txt
+
+OFS= Output Field Seperator
+Output:adds numbers to the right of outputed txt
 
 
+>cat fakepasswd.txt | sort
+-n argument does numerically
+-nr argument sorts numerically reveresed
+-u argument sorts uniquely
 
-
-
-
-
-
-
-
-
-
-
+Output: It sorts file by position in ascii key table (alphabetical)
 
 
 
