@@ -322,43 +322,5 @@ To read more on the Shadow file format, go to the following resource:
 
 
 
-Answer:
-
-
-#!/bin/bash
-
-file="$HOME/PASS/shadow.txt"
-password="Password1234"
-salt="bad4u"
-
-while IFS=':' read -r user old_pass rest; do
-    new_pass=$(openssl passwd -1 -salt "$salt" "$password")
-    print "$user:$new_pass$rest"
-done < "$file"
-
-
-
-
-
-
-
-
-
-
-
-#!/bin/bash
-
-
-FILE="$HOME/PASS/shadow.txt"
-
-
-awk -F: -v salt="bad4u" '{ 
-    if (NF == 2) 
-        print $1 ":" " " $(printf "%s" "Password1234" | openssl passwd -1 -salt "$salt");
-    else 
-        print $1 ":" " " $(printf "%s" "Password1234" | openssl passwd -1 -salt "$salt") ":" " " $NF 
-}' "$FILE"
-
-
 
 
