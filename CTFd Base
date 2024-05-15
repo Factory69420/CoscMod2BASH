@@ -368,6 +368,26 @@ find ~/ -name '*.bin' -exec dirname {} \; | sort -u
 
 
 
+Answer:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
