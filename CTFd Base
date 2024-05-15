@@ -320,7 +320,8 @@ To read more on the Shadow file format, go to the following resource:
 
     man shadow.5
 
+Answer:
+HASHED=$(openssl passwd -1 -salt bad4u Password1234) 
+awk -F: -v hh=$HASHED '{OFS=":"}{$2=hh;print}' $HOME/PASS/shadow.txt
 
-
-
-
+-----------------------------------------------------------------------------------------------------
