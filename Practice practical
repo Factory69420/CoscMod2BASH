@@ -290,5 +290,10 @@ function q1()
 Answer:
 
 
-
+function q1()
+{
+  # Valid Variables are:
+  dirpath=$1
+  find "$dirpath" -type f -mtime -1 -printf "%p\n" | sort
+}
 
