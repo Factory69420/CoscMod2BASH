@@ -189,11 +189,12 @@ file $A
 
 ----------------------------------------------------------------------------------------DAY 3------------------------------------------------------------------------------------
 
+tar -czvf
 
-
-
-
-
+wc -l counts all lines
+only 1 layer deep -maxdepth
+-cmin -30		changed last 30 minutes
+-amin -60		accessed last hour
 
 
 
